@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+
+<script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const player = Plyr.setup('.js-player');
+    });
+</script>
+
+<div class="js-player" id="player">
+    <iframe
+        src="https://www.youtube.com/embed/{{ include.youtube }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+        allowfullscreen allowtransparency allow="autoplay"></iframe>
+</div>
